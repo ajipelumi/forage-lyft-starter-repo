@@ -22,7 +22,7 @@ class SplinderBattery(Battery):
         # Get time since last service.
         time_since_last_service = self.current_date - self.last_service_date
         # Check if the battery needs service.
-        if time_since_last_service > timedelta(days=2*365):
+        if time_since_last_service > timedelta(days=3*365):
             # Return True.
             return True
         else:
